@@ -9,25 +9,25 @@ spring:
   application:
     name: customer
   cloud:
-    # config:
-      # discovery:
-        # enabled: true
-        # service-id: config-server
-      # failFast: true
-      #name of base properties config file, before profile
-      # name: config-client
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+      failFast: true
+      # name of base properties config file, before profile
+      name: config-client
       #profile: development
       #label: latest
-      # username: admin
-      # password: qwerty
-      # retry: 
-      #   max-attempts: 1
-      #   max-interval: 1000
-# management: 
-#   endpoints:
-#     web:
-#       exposure:
-#         include: "*"  
-#   endpoint:
-#     health:
-#       show-details: ALWAYS
+      username: admin
+      password: qwerty
+      retry: 
+        max-attempts: 1
+        max-interval: 1000
+management: 
+  endpoints:
+    web:
+      exposure:
+        include: "*"  
+  endpoint:
+    health:
+      show-details: ALWAYS
